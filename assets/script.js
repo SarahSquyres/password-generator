@@ -7,7 +7,7 @@ var lowercaseLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', '
 var symbolsCharacters = ['!', '#', '$', '.', '&', '*', '%', '(', ')', '@', '_', '~'];
 
 
-// Get random index from array
+// Get random index from array, received help from tutor
 function getRandom(arr) {
   return Math.floor(Math.random() * arr.length);
 }
@@ -15,9 +15,10 @@ function getRandom(arr) {
 
 // Generate Password
 function generatePassword() {
-  // Prompts
+  
+  // Prompts, received help from tutor
   var passLength = parseInt(prompt("How many characters would you like your password to contain? (Value must be between 8 and 128)"));
-  // Password Criteria
+  // Password Criteria, received help from tutor
   if (passLength < 8 || passLength > 128) {
     alert("Password must be between 8 and 128 characters in length!!!")
     return null;
@@ -27,14 +28,11 @@ function generatePassword() {
   var hasNumbers = confirm("Would you like to have numbers in your password?")
   var hasSymbols = confirm("Would you like to have symbols in your password?")
 
-  // - at least one character type selected
-
-
-  // Contains random characters
+  // Encapsulates random characters, received help from tutor
   var pool = []
   var password = [];
 
-  // Push random characters to pool
+  // Push random characters to pool, received help from tutor
   if (hasUppercase === true) {
     for (let i = 0; i < passLength; i++) {
       var randomIndex = getRandom(uppercaseLetters);
@@ -67,15 +65,19 @@ function generatePassword() {
     }
 
   }
+  if (hasNumbers === false, hasSymbols === false, hasLowercase === false, hasSymbols === false) {
+     alert("Please make at least one selection!")
+     return null;
+  }
 
-  // Push random characters from pool to password
+  // Push random characters from pool to password, received help from tutor
   for (let i = 0; i < passLength; i++) {
     var randomIndex = getRandom(pool);
     var randomChar = pool[randomIndex];
     password.push(randomChar)
   }
 
-  // Convert password to string
+  // Convert password to string, received help from tutor
   return password.join("");
 }
 
