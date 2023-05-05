@@ -41,3 +41,10 @@ I learned about JavaScript functionality and syntax.  JavaScript is a powerful t
 [Password Generator Link](https://sarahsquyres.github.io/password-generator/)
 
 ![Screenshot](./assets/images/03-javascript-homework-demo.png)
+
+
+## Collaboration
+
+I would like to thank my tutor Faran Navazi for helping me navigate through this project.
+
+I also had the privilege of collaborating with Jayne Valverde for this challenge.
